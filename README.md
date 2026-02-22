@@ -57,12 +57,12 @@ Anyone in the list below has full access to this code and can fork or clone it b
 ## 🧘 Reflections
 
 1. How did you handle optional props in your components?
->Within the UserProfileCard component, ternery operators were used to determine if the values of the show/hide properties were true. Children were also used to house additional optional messages passed to componenets. Buttons only appear if their optional properties exist and are true by using the short circuit operator to evaluate the incoming properties.
+    >Within the UserProfileCard component, ternery operators were used to determine if the values of the show/hide properties were true. Children were also used to house additional optional messages passed to componenets. Buttons only appear if their optional properties exist and are true by using the short circuit operator to evaluate the incoming properties.
 1. What considerations did you make when designing the component interfaces?
->I think all of this information was pre-defined within the instructions.
+    >I think all of this information was pre-defined within the instructions.
 1. How did you ensure type safety across your components?
->The interfaces define the types of properties that will be used throughout the components and project. Deconstructing the props based on the interfaces and adhering to the types was the only work to be done that I remember.
+    >The interfaces define the types of properties that will be used throughout the components and project. Deconstructing the props based on the interfaces and adhering to the types was the only work to be done that I remember.
 1. What challenges did you face when implementing component composition?
->I really didn't call any children from inside a parent component. We sent data back from ProductDisplay to the main App to render the "child" AlertBox. Since AlertBox could be used for multiple scenarios, my group determined it should live at the top of the page and rendered it from the main App.
->
->If I were to only use AlertBox for actions dealt with in the ProductDisplay component, I think a challenge I would have is figuring out where handleAddtoCart should live. And maybe that's a question I should have asked anyway because the only action that will call it comes from ProductDisplay. However, I know that, the states and functions have to live where the applicable data lives too, so I think it would always live in the App. Another challenge might be how many other components will call AlertBox and will the properties be generic enough.
+    >I really didn't call any children from inside a parent component. We sent data back from ProductDisplay to the main App to render the "child" AlertBox. Since AlertBox could be used for multiple scenarios, my group determined it should live at the top of the page and rendered it from the main App.
+    >
+    >If I were to only use AlertBox for actions dealt with in the ProductDisplay component, I think a challenge I would have is figuring out where handleAddtoCart should live. And maybe that's a question I should have asked anyway because the only action that will call it comes from ProductDisplay. However, I know that, the states and functions have to live where the applicable data lives too, so I think it would always live in the App. Another challenge might be how many other components will call AlertBox and will the properties be generic enough.
