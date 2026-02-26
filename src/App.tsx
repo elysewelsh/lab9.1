@@ -75,7 +75,6 @@ const App = () => {
     setShowAlert(true);
     console.log(cartItems);
   };
- 
   return (
     <div className="flex flex-col">
       {showAlert && (
